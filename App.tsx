@@ -27,6 +27,7 @@ import {
 
 type SectionProps = PropsWithChildren<{
   title: string;
+  
 }>;
 
 function Section({children, title}: SectionProps): React.JSX.Element {
@@ -64,6 +65,9 @@ function App(): React.JSX.Element {
 
   return (
     <SafeAreaView style={backgroundStyle}>
+      <div>
+        
+      </div>
       <StatusBar
         barStyle={isDarkMode ? 'light-content' : 'dark-content'}
         backgroundColor={backgroundStyle.backgroundColor}
@@ -76,7 +80,7 @@ function App(): React.JSX.Element {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Step One">
+          <Section title="Ste One">
             Edit <Text style={styles.highlight}>App.tsx</Text> to change this
             screen and then come back to see your edits.
           </Section>
